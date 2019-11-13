@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Button tooltip </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"> </script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"> </script> 
+
+</head>
+
+<script>
+ $(function(){
+ 	$('[data-toggle="popover"]').popover()
+ })
+
+</script>
+
+<body style="background-color: #DBDAD5"> 
+	
+
+ <h3 align="Center" class="text-danger"> Button Tooltip </h3>
+	 <br> <br>
+ <div class="cotainer">
+  <center>
+  	<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Content on Top"> Popover in Top </button>
+
+ 	<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right"
+ 	data-content="Content on Right"> Popover in Right </button>
+
+ 	<button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="left"
+ 	data-content="Content on Left"> Popover in Left </button>
+
+ 	<button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom"
+ 	data-content="Content on Botoom"> Popover in Bottom </button>
+  </center>  <br> <br>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  <br> 
+  <h3 align="Center" class="text-danger"> Collapse Example </h3> <br>
+<center>
+	
+  <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#lpu"><b> LPU </b></button>
+
+  <div id="lpu" class="collapse">
+   Lovely Professional University is a India's Largest Private University situated in Phagwara,Punjab.
+   The University was established in the year 2005 by Lovely International Trust,
+   under the Lovely Professional University Act, 2005 and it's started operation succesfully..!!
+
+  </div>
+
+</center>
+</body>
+</html>

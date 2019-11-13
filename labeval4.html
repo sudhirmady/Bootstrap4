@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Scroll Spy</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <script src="js/jquery.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <style>
+
+ ul.nav-pills {
+ top: 55px;
+ position: fixed;
+ }
+ div.col-8 div {
+ height: 700px;
+ }
+ </style>
+</head>
+<body style="background-color: #DEC51D" data-spy="scroll" data-target="#myScrollspy">
+<div class="container-fluid">
+ <div class="row">
+ <nav class="col-sm-2 col-4 bg-dark" id="myScrollspy">
+ 	<h3 align="center" class="text-light"> Student's CGPA </h3>
+    <ul class="nav nav-pills flex-column">
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#sem1">Sem 1 </a>
+      </li>
+
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#sem2">Sem 2</a>
+    </li>
+ 
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#sem3">Sem 3</a>
+    </li>
+ 
+   </ul>
+ </nav>
+
+ <div class="col-sm-10 col-8">
+
+   <div class="bg-danger" id="sem1"> 
+     <center>
+ 	   <h3 class="text-light"> Sem 1 Marks </h3>
+ 	   <p class="text-light"> This is the marks of Sem 1 </p>
+
+ 	    <table class="table table-bordered table-light table-striped">
+         <tr align="center" class="bg-primary text-light">
+         	<th> S.No </th>
+         	<th> Subject Name </th>
+         	<th> Faculty </th>
+         	<th> Course Code </th>
+         	<th> Marks </th>
+         	<th> Grade </th>
+         </tr>
+
+         <tr align="center">
+         	<td> 01 </td>
+         	<td> C Programming - I </td>
+         	<td> Mrs.Anupama </td>
+         	<td> CAP118 </td>
+         	<td> 68 </td>
+         	<td> B+  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 02 </td>
+         	<td> Computer Architecture & Organisational Design </td>
+         	<td> Mrs.Kaur </td>
+         	<td> CAP519 </td>
+         	<td> 79 </td>
+         	<td> A  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 03 </td>
+         	<td> Verbal Ability - I </td>
+         	<td> Maani Verma </td>
+         	<td> PEV101 </td>
+         	<td> 86 </td>
+         	<td> A+  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 04 </td>
+         	<td> Softskills </td>
+         	<td> Pele George Chakre </td>
+         	<td> PES103 </td>
+         	<td> 92 </td>
+         	<td> O  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 05 </td>
+         	<td> Analytical Skills </td>
+         	<td> Mr.Singh </td>
+         	<td> PEA204 </td>
+         	<td> 58 </td>
+         	<td> B  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 05 </td>
+         	<td> Digital Electronics & Its Structure </td>
+         	<td> Mr.Manikant Roy </td>
+         	<td> CAP509 </td>
+         	<td> 75 </td>
+         	<td> B+  </td>
+         </tr>
+
+ 	   </table>
+       <br> <br> 
+ 	   <button align="center" class="btn btn-warning" data-toggle="collapse" data-target="#s1"><b> Sem 1 CGPA </b> </button>
+         <div id="s1" class="collapse">
+         	<br> <h3 align="center" class="text-light"> Your CGPA is " 8.5" </h3> <br> <br>
+         </div>
+     
+  </center>
+   </div>
+
+
+   <div class="bg-info" id="sem2"> <br> <br>
+    <center> 	  
+ 	  
+ 	   <h3 class="text-light"> Sem 2 Marks </h3>
+ 	   <p class="text-light"> This is the marks of Sem 2 </p>
+ 	   <table class="table table-bordered table-light table-striped">
+         <tr align="center" class="bg-danger text-light">
+         	<th> S.No </th>
+         	<th> Subject Name </th>
+         	<th> Faculty </th>
+         	<th> Course Code </th>
+         	<th> Marks </th>
+         	<th> Grade </th>
+         </tr>
+
+         <tr align="center">
+         	<td> 01 </td>
+         	<td> Graphic Tools </td>
+         	<td> Mr.Bir Bhadar </td>
+         	<td> CAP216 </td>
+         	<td> 86 </td>
+         	<td> A+  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 02 </td>
+         	<td> Digital Electronics & Its Structure </td>
+         	<td> Mr.Manikant Roy </td>
+         	<td> CAP509 </td>
+         	<td> 75 </td>
+         	<td> B+  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 03 </td>
+         	<td> Verbal Ability- II </td>
+         	<td> Mrs.Maani Verma </td>
+         	<td> PEV102 </td>
+         	<td> 90 </td>
+         	<td> O  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 04 </td>
+         	<td> C Programming- II </td>
+         	<td> Ms.Sonam Kaler </td>
+         	<td> CAP116 </td>
+         	<td> 70 </td>
+         	<td> A  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 05 </td>
+         	<td> Computer Architecture & Organisational Design </td>
+         	<td> Mrs.Kaur </td>
+         	<td> CAP519 </td>
+         	<td> 79 </td>
+         	<td> A  </td>
+         </tr>
+
+ 	   </table>
+ 	   <br>
+ 	   <button align="center" class="btn btn-warning text-dark" data-toggle="collapse" data-target="#s2"><b> Sem 2 CGPA </b></button>
+         <div id="s2" class="collapse">
+           <br> <h3 align="center" class="text-light"> Your CGPA is " 9.0" </h3>
+         </div>
+      </center>
+   </div>
+
+
+   <div class="bg-success" id="sem3"> 
+     <center>
+ 	   <h3 class="text-light"> Sem 3 Marks </h3>
+ 	   <p class="text-light"> This is the marks of Sem 3 </p>
+
+ 	    <table class="table table-bordered table-light table-striped">
+         <tr align="center" class="bg-danger text-light">
+         	<th> S.No </th>
+         	<th> Subject Name </th>
+         	<th> Course Code </th>
+         	<th> Marks </th>
+         	<th> Grade </th>
+         </tr>
+
+         <tr align="center">
+         	<td> 01 </td>
+         	<td> Angular-II </td>
+         	<td> CAP917 </td>
+         	<td> 65 </td>
+         	<td> B+ </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 02 </td>
+         	<td> Bootstrap </td>
+         	<td> CAP916 </td>
+         	<td> 82 </td>
+         	<td> A+ </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 03 </td>
+         	<td> Data Structures </td>
+         	<td> CAP767 </td>
+         	<td> 86 </td>
+         	<td> A+  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 04 </td>
+         	<td> Software Engg. </td>
+         	<td> CAP145 </td>
+         	<td> 78 </td>
+         	<td> A  </td>
+         </tr>
+
+         <tr align="center">
+         	<td> 05 </td>
+         	<td> Computer Architecture & Organisational Design </td>
+         	<td> CAP519 </td>
+         	<td> 79 </td>
+         	<td> A  </td>
+         </tr>
+
+ 	   </table>
+
+ 	   <br> <br>
+ 	   <button align="center" class="btn btn-warning" data-toggle="collapse" data-target="#s3"><b> Sem 3 CGPA </b> </button>
+         <div id="s3" class="collapse">
+           <br> <h3 align="center" class="text-light"> Your CGPA is " 8.7" </h3>
+         </div>
+  </center>
+   </div>
+
+   
+
+    </div>
+ </div>
+</div>
+
+
+</body>
+</html>
+
+

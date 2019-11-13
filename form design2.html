@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form Design 2 </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale=1>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"> </script>
+<script src="js/bootstrap.min.js"> </script>
+
+   <script>
+   function validateForm() {
+      var x = document.forms["myform"]["fname"].value;
+      var xy = document.forms["myform"]["lname"].value;
+      var y=document.forms['myform']["email"].value;
+      var a=document.forms['myform']['age'].value;
+      var b=document.forms['myform']['r1'].value;
+      var c=document.forms['myform']['cc1'].value;
+      var d=document.forms['myform']['skl'].value;
+
+     if (x == null || x=="", xy == null || xy=="", y== null || y=="", a==null || a=="", b==null || b=="", c==null || c=="" , d== null || d=="" ) {
+       alert("Please Fill All Required Field");
+       return false;
+     }
+    
+  }
+
+
+     </script>
+
+</head>
+<body style="background-color: #DFD9D9">
+ <div class="container"> <br>
+  <div class="row">
+    <div class="col-sm-6 bg-light"><br>
+     <h2 align="center" class="text-danger"> Form </h2> <br>
+      <form name="myform" class="form-inline">
+     
+     <div class="form-group">
+      <label for="fname"><b>First Name : &nbsp; </b> 
+       	<input type="text" id="fname" name="fname" class="form-control" placeholder="Enter First Name">
+      </label>
+     </div> <br><br>
+
+     <div class="form-group">
+     	<label for="lname"> <b> Last Name : &nbsp; </b>
+     		<input type="text" id="lname" name="lname" class="form-control" placeholder="Enter Last Name">
+     	</label>
+     </div> <br> <br>
+
+     <div class="form-group">
+     	<label for="email"> <b> Email : &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; </b>
+     		<input type="email" class="form-control" name="email" placeholder="Enter Email">
+     	</label>
+     </div> <br> <br>
+
+     <div class="form-group">
+     	<label> <b> Age :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </b>
+     		<input type="number" class="form-control" name="age" id="age" placeholder="Enter Your Age">
+     	</label>
+     </div> <br> <br>
+     
+     
+   <div class="custom-control custom-radio custom-control-inline">
+   	<label><b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Status : &nbsp; &nbsp; &nbsp; &nbsp;</b></label>
+    <input type="radio" class="custom-control-input" id="a1" name="r1">
+  <label class="custom-control-label" for="a1"> Unmarried </label>
+</div>
+
+  <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="a2" name="r1">
+  <label class="custom-control-label" for="a2"> Married </label>
+  </div><br> <br>
+   
+  <div class="custom-control custom-checkbox custom-control-inline"><br>
+  	<label> <b> Languages Known : &nbsp; &nbsp; &nbsp; &nbsp;</b> 
+  	<input type="checkbox" class="custom-control-input" id="c1" name="cc1">
+  	<label class="custom-control-label" for="c1"> English </label>
+  	</div> 
+
+
+  	<div class="custom-control custom-checkbox custom-control-inline"> 
+  		<input type="checkbox" class="custom-control-input" id="c2" name="cc1">
+  		<label class="custom-control-label" for="c2"> Hindi </label> 
+  	</div> 
+
+  	<div class="custom-control custom-checkbox custom-control-inline">
+  		<input type="checkbox" class="custom-control-input" id="c3" name="cc1">
+  		<label class="custom-control-label" for="c3"> Telugu </label>
+  	</div> <br> <br>
+
+  <div class="form-group">
+	<label> <b> Skills : </b> &nbsp; &nbsp; &nbsp;
+	 <textarea class="form-control" placeholder="Enter Your Skills..." rows="3" cols="35" id="ta1" name="skl" style="resize:none;"></textarea> &nbsp; &nbsp; &nbsp; 
+</div>  <br> <br>
+
+ <div class="custom-control custom-checkbox">   
+ 	<br> <input type="checkbox" name="c4" class="custom-control-input" id="cc4">
+ 	<label class="custom-control-label" for="cc4"> Remember me</label> 
+ </div> <br> <br> 
+
+  <br> <br>
+  <br>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <input  type="button" class="btn btn-primary" value="Submit" onclick="validateForm()"> &nbsp; &nbsp;
+ 	<input type="reset" class="btn btn-secondary" value="Clear"> 
+ 
+
+
+
+
+
+
+
+
+
+     </form>
+    </div>
+  </div>
+ </div>
+
+</body>
+</html>
